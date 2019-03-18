@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  microbit:
+    image: microbit:alpine
+    build: 
+      context: .
+    ports:
+      - 54321:54321
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    stdin_open: true
+    tty: true

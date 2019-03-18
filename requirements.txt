@@ -1,0 +1,3 @@
+ptvsd
+python-daemon
+pyserial
